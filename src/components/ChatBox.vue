@@ -106,7 +106,7 @@ export default {
 
     scrollToBottom(){
         const container = this.$el.querySelector("#scrollContainer");
-        container.scrollTop = container.scrollHeight;
+        container.scroll({ top: container.scrollHeight, behavior: 'smooth' });
     }
   },
 
