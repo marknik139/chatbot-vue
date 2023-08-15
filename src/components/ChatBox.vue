@@ -116,12 +116,6 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
-.chatbox-container {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 1000;
-}
 
 .container {
   width: 400px;
@@ -133,6 +127,25 @@ export default {
   flex-direction: column;
   overflow: hidden;
   font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 960px){
+  .chatbox-container {
+  position: fixed;
+  top: 0;
+	left: 0;
+  width: 100%;
+	height: 100%;
+  z-index: 1000;
+}
+}
+@media (min-width: 960px){
+  .chatbox-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+}
 }
 
 .answerContainer {
